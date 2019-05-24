@@ -18,19 +18,10 @@ def greeting(greet = "Hi there,", name = " Bobby!")
 end
 
 
-  describe '#last_evaluated_value' do
-    it 'returns the phrase "expert"' do
-      expect(last_evaluated_value).to eq("expert")
-    end
-  end
+def last_evaluated_value(phrase = "expert")
+puts phrase
+end
 
-  describe '#pizza_party' do
-    it 'returns "cheese" by default' do
-      expect(pizza_party).to eq("cheese")
-    end
-
-    it 'returns the argument it received' do
-      expect(pizza_party("pepperoni")).to eq("pepperoni")
-    end
-  end
+def pizza_party(option = "cheese")
+puts "#{option}"
 end
